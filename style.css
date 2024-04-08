@@ -1,12 +1,52 @@
-
 body {
-    background: linear-gradient(-45deg, #ee7752, #e7cb3c, #f839b8, #23d5ab);
-    background-size: 400% 400%;
-	  animation: gradient 15s ease infinite;
-	  height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    
+  display: flex;
+  background: linear-gradient(-45deg, #d8b5d2, #eef1c3, #f47321);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center;
 }
+
+.U {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+}
+
+.U_Image,
+.Forecast_Image {
+  width: 80%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: -20px; /* Adjust margin bottom to create overlap */
+  position: relative; /* Add relative positioning */
+  z-index: 1; /* Set a higher z-index to bring the images to the front */
+}
+
+.map-container {
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Horizontally center the map */
+  position: relative; /* Add relative positioning */
+  overflow: hidden; /* Prevent map from overflowing */
+}
+
+svg {
+  width: 100%; /* Ensure SVG map fits within container */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Change to absolute positioning */
+  top: 50%; /* Align to top */
+  left: 50%; /* Align to left */
+  transform: translate(-50%, -50%); /* Center the SVG */
+  z-index: 0; /* Set a lower z-index to send the map behind the images */
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -26,22 +66,96 @@ body {
 }
 
 body.circular-gradient {
-  background: radial-gradient(circle, #8e54d5, #de7a00);
+  background: radial-gradient(circle, #fff, #f47321, #005030);
   background-size: cover;
 }
-#map-container {
-  width: 100%;
-  height: 100vh; /* Adjust height as needed */
+.map-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  overflow: hidden; /* Prevent scrolling */
 }
 
-#Richter {
+#popupContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+  background-color: rgba(12, 255, 251, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#popupContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#Richter,
+#Arboretum,
+#PoliSci,
+#Cox,
+#CS,
+#Law,
+#ArtsandSci,
+#Physics,
+#Dooly,
+#Nursing,
+#Frost,
+#Lake,
+#Stanford,
+#wellness,
+#Eaton,
+#Archi,
+#Mahoney,
+#Business,
+#LC,
+#Comm
+{
   fill: none; /* No fill */
-    stroke: yellow; /* Yellow outline */
-    stroke-width: 2px; /* Adjust the width as needed */
-    transition: fill 0.3s, stroke 0.3s; /* Smooth transition for fill and stroke */
+    stroke: rgb(255, 102, 0); /* Yellow outline */
+    stroke-width: 4px; /* Adjust the width as needed */
+    transition: fill 0.1s, stroke 0.3s; /* Smooth transition for fill and stroke */
 }
 
+#Arboretum:hover,
+#PoliSci:hover,
+#Cox:hover,
+#CS:hover,
+#Law:hover,
+#ArtsandSci:hover,
+#Physics:hover,
+#Dooly:hover,
+#Nursing:hover,
+#Frost:hover,
+#Lake:hover,
+#Stanford:hover,
+#wellness:hover,
+#Eaton:hover,
+#Archi:hover,
+#Mahoney:hover,
+#Business:hover,
+#LC:hover,
+#Comm:hover,
 #Richter:hover {
-  fill: pink; /* Fill color on hover */
+  fill: #f47321; /* Fill color on hover */
   stroke: none; /* Remove stroke on hover */
+}
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
 }
