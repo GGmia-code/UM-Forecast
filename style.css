@@ -68,15 +68,15 @@ body {
   width: 100%;
   display: flex;
   justify-content: left;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start;
   position: absolute;
-  top: 20px; /* Position at the top of the page */
+  top: 20px;
   z-index: 1; 
 }
 
 .U_Image,
 .Forecast_Image {
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
   position: absolute;
   z-index: 2;
 }
@@ -84,14 +84,14 @@ body {
 .U_Image {
   top: 0;
   left: 200px;
-  width: 30%; /* Adjust width as needed */
+  width: 30%;
 
 }
 
 .Forecast_Image {
   top: 200px;
   left: 130px;
-  width: 40%; /* Adjust width as needed */
+  width: 40%;
 
 }
 
@@ -100,21 +100,21 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; /* Horizontally center the map */
-  position: relative; /* Add relative positioning */
-  overflow: hidden; /* Prevent map from overflowing */
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
   z-index: 0;
 }
 
 svg {
-  width: 100%; /* Ensure SVG map fits within container */
+  width: 100%;
   transform: translate(-50%, -50%) rotate(0deg);
   transform-origin: center center; 
-  height: auto; /* Maintain aspect ratio */
-  position: absolute; /* Change to absolute positioning */
-  top: 60%; /* Align to top */
-  left: 50%; /* Align to left */
-  z-index: 0; /* Set a lower z-index to send the map behind the images */
+  height: auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 0;
 }
 
 @keyframes gradient {
@@ -141,9 +141,9 @@ body.circular-gradient {
 }
 .map-container {
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
-  overflow: hidden; /* Prevent scrolling */
+  justify-content: center;
+  align-items: center; 
+  overflow: hidden;
 }
 
 #popupContainer {
@@ -196,10 +196,10 @@ body.circular-gradient {
 #LC,
 #Comm
 {
-  fill: none; /* No fill */
-    stroke: rgb(255, 102, 0); /* Yellow outline */
-    stroke-width: 4px; /* Adjust the width as needed */
-    transition: fill 0.1s, stroke 0.3s; /* Smooth transition for fill and stroke */
+  fill: none;
+    stroke: rgb(255, 102, 0);
+    stroke-width: 4px;
+    transition: fill 0.1s, stroke 0.3s;
 }
 
 #Arboretum:hover,
@@ -222,8 +222,8 @@ body.circular-gradient {
 #LC:hover,
 #Comm:hover,
 #Richter:hover {
-  fill: #f47321; /* Fill color on hover */
-  stroke: none; /* Remove stroke on hover */
+  fill: #f47321;
+  stroke: none;
 }
 .close-button {
   position: absolute;
