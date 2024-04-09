@@ -1,9 +1,9 @@
 .header-text {
   text-align: center;
   position: absolute;
-  top: 20px; /* Adjust the top position as needed */
-  width: 100%; /* Make the header text span the entire width */
-  z-index: 1; /* Ensure the header text appears above other elements */
+  top: 20px; 
+  width: 100%; 
+  z-index: 1;
 }
 #weather {
   padding: 10px;
@@ -12,55 +12,55 @@
   bottom: 40px;
   right: 190px;
   width: 200px;
-  box-shadow: 0px 4px 8px #9f2db4; /* Add shadow */
-  border-radius: 10px; /* Add rounded corners */
-  z-index: 2; /* Ensure the weather box appears on top of other elements */
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  backdrop-filter: blur(20px); /* Apply blur effect to background */
+  box-shadow: 0px 4px 8px #9f2db4;
+  border-radius: 10px;
+  z-index: 2;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  backdrop-filter: blur(20px); 
 
 }
 
 #weather img {
-  max-width: 100%; /* Ensure the image doesn't exceed the container width */
-  margin-bottom: 5px; /* Adjust margin bottom to reduce space */
+  max-width: 100%; 
+  margin-bottom: 5px; 
 }
 
 #weather-content {
-  font-family: Arial, sans-serif; /* Change font family */
-  text-align: center; /* Center text horizontally */
-  width: 100%; /* Occupy entire width */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 100%;
 }
 
 #weather-content p {
   margin: 0;
-  text-transform: uppercase; /* Convert text to uppercase */
-  color: #3cc1c8; /* Set color to #9f2db4 */
+  text-transform: uppercase;
+  color: #3cc1c8;
   font-size: 18px;
 }
 
 #weather-content p:not(:last-child) {
-  margin-bottom: 5px; /* Add margin between paragraphs */
+  margin-bottom: 5px
 }
 .header-text h1 {
   font-size: 24px;
   color: #eef1c3;
   font-weight: 500;
-  /* text-shadow: 
-    -1.5px -1.5px 0 #fae098,  
-     1.5px -1.5px 0 #fae098,
-    -1.5px  1.5px 0 #fae098,
-     1.5px  1.5px 0 #fae098; */
+   text-shadow: 
+    -0.5px -0.5px 0 #9f2db4,  
+     0.5px -0.5px 0 #9f2db4,
+    -0.5px  0.5px 0 #9f2db4,
+     0.5px  0.5px 0 #9f2db4; 
 }
 body {
   display: flex;
-  background: linear-gradient(-45deg, #d8b5d2, #eef1c3, #f47321);
+  background: linear-gradient(-45deg, #9f2db4, #eef1c3, #f47321);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
-  justify-content: center; /* Horizontally center the content */
+  justify-content: center;
   align-items: center;
 }
 
@@ -136,7 +136,7 @@ svg {
 }
 
 body.circular-gradient {
-  background: radial-gradient(circle, #fff, #f47321, #005030);
+  background: radial-gradient(circle, #fff, #f47321, #9f2db4);
   background-size: cover;
 }
 .map-container {
