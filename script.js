@@ -411,7 +411,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Add other paths and their mood feedback arrays here...
     };
+        fetch('weatherData.json')
+        .then(response => response.json())
+        .then(data => {
+            // Assuming you want to use the first forecast in the list
+            const firstForecast = data.list[0];
 
+            // Extract relevant weather information from the first forecast
+            const locationName = data.city.name; // Assuming 'city.name' is the location name in the JSON
+            const temperature = firstForecast.main.temp;
+            const temperatureFahrenheit = (temperature - 273.15) * 9/5 + 32;
+            const weatherDescription = firstForecast.weather[0].description;
+
+            // Update the HTML content of the 'weather' div
+            document.getElementById('weather').innerHTML = `
+                <div id="weather-content">
+                    <img src="cloud_image.png" alt="Weather Icon">
+                    <p>${temperatureFahrenheit.toFixed(2)}°F</p>
+                    <p>${locationName}</p>
+                    <p>${weatherDescription}</p>
+                </div>`;
+        })
+        .catch(error => console.error('Error fetching weather data:', error));
+
+    
     // Function to change background gradient based on mood
     function changeBackgroundGradient(mood) {
         switch (mood) {
@@ -428,6 +451,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.style.background = "radial-gradient(circle, #fff, #a4c6b8, #5e435d)";
         }
     }
+
+    
 
     // Function to handle popups, paths, etc.
     function openPopup(feedbacks, mood) {
