@@ -7,10 +7,10 @@
 }
 #weather {
   padding: 10px;
-  /* background: #3cc1c8; */
+  background: none;
   position: fixed;
   bottom: 40px;
-  right: 190px;
+  right: 30px;
   width: 200px;
   box-shadow: 0px 4px 8px #9f2db4;
   border-radius: 10px;
@@ -18,7 +18,7 @@
   display: flex; 
   justify-content: center;
   align-items: center; 
-  backdrop-filter: blur(20px); 
+  backdrop-filter: blur(10px); 
 
 }
 
@@ -45,13 +45,13 @@
 }
 .header-text h1 {
   font-size: 24px;
-  color: #eef1c3;
+  color: #9f2db4;
   font-weight: 500;
    text-shadow: 
-    -0.5px -0.5px 0 #9f2db4,  
-     0.5px -0.5px 0 #9f2db4,
-    -0.5px  0.5px 0 #9f2db4,
-     0.5px  0.5px 0 #9f2db4; 
+    -0.5px -0.5px 0 #eef1c3,  
+     0.5px -0.5px 0 #eef1c3,
+    -0.5px  0.5px 0 #eef1c3,
+     0.5px  0.5px 0 #eef1c3; 
 }
 body {
   display: flex;
@@ -83,20 +83,20 @@ body {
 
 .U_Image {
   top: 0;
-  left: 200px;
-  width: 30%;
+  left: 170px;
+  width: 35%;
 
 }
 
 .Forecast_Image {
-  top: 200px;
-  left: 130px;
-  width: 40%;
+  top: 230px;
+  left: 70px;
+  width: 50%;
 
 }
 
 .map-container {
-  width: 50%;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -107,13 +107,13 @@ body {
 }
 
 svg {
-  width: 100%;
+  width: 110%;
   transform: translate(-50%, -50%) rotate(0deg);
   transform-origin: center center; 
   height: auto;
   position: absolute;
-  top: 60%;
-  left: 50%;
+  top: 62%;
+  left: 59%;
   z-index: 0;
 }
 
@@ -175,26 +175,33 @@ body.circular-gradient {
   margin-bottom: 50px;
 }
 
-#Richter,
+#Rainbow,
+#Lake,
+#CAS,
+#Foote,
 #Arboretum,
 #PoliSci,
+#Physics,
 #Cox,
 #CS,
+#Richter,
 #Law,
-#ArtsandSci,
-#Physics,
+#Frost,
+#Hecht,
+#Gym,
+#UV,
+#Arts,
+#Flipse,
+#Arch,
+#Eaton,
 #Dooly,
 #Nursing,
-#Frost,
-#Lake,
-#Stanford,
-#wellness,
-#Eaton,
-#Archi,
-#Mahoney,
-#Business,
+#Allen,
+#Comm,
 #LC,
-#Comm
+#Merrick,
+#Herbert,
+#Mahoney
 {
   fill: none;
     stroke: rgb(255, 102, 0);
@@ -202,26 +209,33 @@ body.circular-gradient {
     transition: fill 0.1s, stroke 0.3s;
 }
 
+#Rainbow:hover,
+#Lake:hover,
+#CAS:hover,
+#Foote:hover,
 #Arboretum:hover,
 #PoliSci:hover,
+#Physics:hover,
 #Cox:hover,
 #CS:hover,
+#Richter:hover,
 #Law:hover,
-#ArtsandSci:hover,
-#Physics:hover,
+#Frost:hover,
+#Hecht:hover,
+#Gym:hover,
+#UV:hover,
+#Arts:hover,
+#Flipse:hover,
+#Arch:hover,
+#Eaton:hover,
 #Dooly:hover,
 #Nursing:hover,
-#Frost:hover,
-#Lake:hover,
-#Stanford:hover,
-#wellness:hover,
-#Eaton:hover,
-#Archi:hover,
-#Mahoney:hover,
-#Business:hover,
-#LC:hover,
+#Allen:hover,
 #Comm:hover,
-#Richter:hover {
+#LC:hover,
+#Merrick:hover,
+#Herbert:hover,
+#Mahoney:hover {
   fill: #f47321;
   stroke: none;
 }
