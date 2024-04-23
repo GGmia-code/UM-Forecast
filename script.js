@@ -408,8 +408,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 "Adequate climate"
             ]
         }
-
-        // Add other paths and their mood feedback arrays here...
     };
         fetch('weatherData.json')
         .then(response => response.json())
@@ -453,7 +451,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     
-
     // Function to handle popups, paths, etc.
     function openPopup(feedbacks, mood) {
         const randomIndex = Math.floor(Math.random() * feedbacks.length);
