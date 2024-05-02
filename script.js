@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const popupContainer = document.getElementById('popupContainer');
     const popupText = document.getElementById('popupText');
     const mapContainer = document.querySelector('.map-container');
+    const svgImage = mapContainer.querySelector("svg");
+
     
     const pathMessages = {
         Rainbow: {
@@ -430,9 +432,44 @@ document.addEventListener('DOMContentLoaded', function () {
                     <p>${weatherDescription}</p>
                 </div>`;
         })
-        .catch(error => console.error('Error fetching weather data:', error));
+        // hover text for all paths:
 
-    
+        const archText = document.getElementById('archText');
+        const archPath = document.getElementById('Arch');
+        
+        archPath.addEventListener('mouseenter', function() {
+            archText.style.display = 'block';
+        });
+        
+        archPath.addEventListener('mouseleave', function() {
+            archText.style.display = 'none';
+        });
+        
+        const artsText = document.getElementById('artsText');
+        const artsPath = document.getElementById('Arts');
+
+        artsPath.addEventListener('mouseenter', function() {
+            artsText.style.display = 'block';
+        });
+
+        artsPath.addEventListener('mouseleave', function() {
+            artsText.style.display = 'none';
+        });
+
+        
+        
+        // blurring map
+        svgImage.addEventListener("click", function() {
+            svgImage.classList.add("blur");
+            popupContainer.style.display = "block";
+        });
+        
+        // Close pop-up
+        popupContainer.addEventListener("click", function() {
+            svgImage.classList.remove("blur");
+            popupContainer.style.display = "none";
+        });
+
     // Function to change background gradient based on mood
     function changeBackgroundGradient(mood) {
         switch (mood) {
@@ -450,7 +487,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    
+
     // Function to handle popups, paths, etc.
     function openPopup(feedbacks, mood) {
         const randomIndex = Math.floor(Math.random() * feedbacks.length);

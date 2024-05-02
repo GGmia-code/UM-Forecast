@@ -2,9 +2,10 @@
   text-align: center;
   position: absolute;
   top: 20px; 
-  width: 100%; 
+  width: 30%;
   z-index: 1;
 }
+
 #weather {
   padding: 10px;
   background: none;
@@ -19,7 +20,6 @@
   justify-content: center;
   align-items: center; 
   backdrop-filter: blur(10px); 
-
 }
 
 #weather img {
@@ -96,7 +96,7 @@ body {
 }
 
 .map-container {
-  width: 100%;
+  width: 90%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -107,13 +107,13 @@ body {
 }
 
 svg {
-  width: 110%;
+  width: 93%;
   transform: translate(-50%, -50%) rotate(0deg);
   transform-origin: center center; 
   height: auto;
   position: absolute;
-  top: 62%;
-  left: 59%;
+  top: 49%;
+  left: 49%;
   z-index: 0;
 }
 
@@ -150,7 +150,7 @@ body.circular-gradient {
   display: none;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -159,7 +159,8 @@ body.circular-gradient {
   background-color: rgba(12, 255, 251, 0.9);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+  z-index: 1000;
+  
 }
 
 #popupContent {
@@ -175,70 +176,70 @@ body.circular-gradient {
   margin-bottom: 50px;
 }
 
-#Rainbow,
-#Lake,
-#CAS,
-#Foote,
-#Arboretum,
-#PoliSci,
-#Physics,
-#Cox,
-#CS,
-#Richter,
-#Law,
-#Frost,
-#Hecht,
-#Gym,
-#UV,
-#Arts,
+/* #Arch,
 #Flipse,
-#Arch,
-#Eaton,
+#Arts,
+#Gym,
+#Arboretum,
+#Foote,
+#Lake,
+#Rainbow,
+#Mahoney,
+#UV,
+#Hecht,
+#Frost,
+#Law,
+#Richter,
+#CAS,
+#CS,
+#Cox,
 #Dooly,
+#Physics,
+#PoliSci,
 #Nursing,
 #Allen,
 #Comm,
 #LC,
 #Merrick,
 #Herbert,
-#Mahoney
+#Eaton
 {
   fill: none;
-    stroke: rgb(255, 102, 0);
-    stroke-width: 4px;
-    transition: fill 0.1s, stroke 0.3s;
+    stroke: rgb(249, 155, 92);
+    stroke-width: 1px;
+    transition: fill 0.4s, stroke 0.3s;
 }
 
-#Rainbow:hover,
-#Lake:hover,
-#CAS:hover,
-#Foote:hover,
-#Arboretum:hover,
-#PoliSci:hover,
-#Physics:hover,
-#Cox:hover,
-#CS:hover,
-#Richter:hover,
-#Law:hover,
-#Frost:hover,
-#Hecht:hover,
-#Gym:hover,
-#UV:hover,
-#Arts:hover,
-#Flipse:hover,
 #Arch:hover,
-#Eaton:hover,
+#Flipse:hover,
+#Arts:hover,
+#Gym:hover,
+#Arboretum:hover,
+#Foote:hover,
+#Lake:hover,
+#Rainbow:hover,
+#Mahoney:hover,
+#UV:hover,
+#Hecht:hover,
+#Frost:hover,
+#Law:hover,
+#Richter:hover,
+#CAS:hover,
+#CS:hover,
+#Cox:hover,
 #Dooly:hover,
+#Physics:hover,
+#PoliSci:hover,
 #Nursing:hover,
 #Allen:hover,
 #Comm:hover,
 #LC:hover,
 #Merrick:hover,
 #Herbert:hover,
-#Mahoney:hover {
+#Eaton:hover {
   fill: #f47321;
   stroke: none;
-}
+} */
 .close-button {
   position: absolute;
   top: 5px;
@@ -249,3 +250,22 @@ body.circular-gradient {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.blur {
+  filter: blur(5px);
+}
+/* Adjust size and appearance of polygons in the main class */
+svg .main {
+  fill: none;
+  stroke: #ffb396;
+  stroke-width: 4px;
+}
+
+/* Increase polygon size and add padding for easier hover and click */
+svg .main:hover {
+  stroke-width: 4px; /* Increase stroke width on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  fill: #f47221;
+  stroke: none;
+}
+
