@@ -160,7 +160,7 @@ body.circular-gradient {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  
+
 }
 
 #popupContent {
@@ -240,17 +240,17 @@ body.circular-gradient {
   fill: #f47321;
   stroke: none;
 } */
+
 .close-button {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
   padding: 5px 10px;
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: #3cc1c8; /* Blue fill */
   border-radius: 5px;
   cursor: pointer;
 }
-
 .blur {
   filter: blur(5px);
 }
