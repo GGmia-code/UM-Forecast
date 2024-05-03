@@ -444,20 +444,289 @@ document.addEventListener('DOMContentLoaded', function () {
         archPath.addEventListener('mouseleave', function() {
             archText.style.display = 'none';
         });
-        
-        const artsText = document.getElementById('artsText');
-        const artsPath = document.getElementById('Arts');
 
-        artsPath.addEventListener('mouseenter', function() {
-            artsText.style.display = 'block';
+        const lakeText = document.getElementById('lakeText');
+        const lakePath = document.getElementById('Lake');
+        
+        lakePath.addEventListener('mouseenter', function() {
+            lakeText.style.display = 'block';
+        });
+        
+        lakePath.addEventListener('mouseleave', function() {
+            lakeText.style.display = 'none';
+        });
+        const flipseText = document.getElementById('flipseText');
+        const flipsePath = document.getElementById('Flipse');
+        
+        flipsePath.addEventListener('mouseenter', function() {
+            flipseText.style.display = 'block';
+        });
+        
+        flipsePath.addEventListener('mouseleave', function() {
+            flipseText.style.display = 'none';
+        });
+        
+        const ArtsText = document.getElementById('ArtsText');
+        const ArtsPath = document.getElementById('Arts');
+        
+        ArtsPath.addEventListener('mouseenter', function() {
+            ArtsText.style.display = 'block';
+        });
+        
+        ArtsPath.addEventListener('mouseleave', function() {
+            ArtsText.style.display = 'none';
         });
 
-        artsPath.addEventListener('mouseleave', function() {
-            artsText.style.display = 'none';
+        const GymText = document.getElementById('GymText');
+        const GymPath = document.getElementById('Gym');
+        
+        GymPath.addEventListener('mouseenter', function() {
+            GymText.style.display = 'block';
+        });
+        
+        GymPath.addEventListener('mouseleave', function() {
+            GymText.style.display = 'none';
+        });
+        
+        const ArboText = document.getElementById('ArboText');
+        const ArboPath = document.getElementById('Arboretum');
+        
+        ArboPath.addEventListener('mouseenter', function() {
+            ArboText.style.display = 'block';
+        });
+        
+        ArboPath.addEventListener('mouseleave', function() {
+            ArboText.style.display = 'none';
+        });
+        
+        const FooteText = document.getElementById('FooteText');
+        const FootePath = document.getElementById('Foote');
+        
+        FootePath.addEventListener('mouseenter', function() {
+            FooteText.style.display = 'block';
+        });
+        
+        FootePath.addEventListener('mouseleave', function() {
+            FooteText.style.display = 'none';
         });
 
         
+        const MahoneyText = document.getElementById('MahoneyText');
+        const MahoneyPath = document.getElementById('Mahoney');
         
+        MahoneyPath.addEventListener('mouseenter', function() {
+            MahoneyText.style.display = 'block';
+        });
+        
+        MahoneyPath.addEventListener('mouseleave', function() {
+            MahoneyText.style.display = 'none';
+        });
+
+        const UVText = document.getElementById('UVText');
+        const UVPath = document.getElementById('UV');
+        
+        UVPath.addEventListener('mouseenter', function() {
+            UVText.style.display = 'block';
+        });
+        
+        UVPath.addEventListener('mouseleave', function() {
+            UVText.style.display = 'none';
+        });
+
+        const HechtText = document.getElementById('HechtText');
+        const HechtPath = document.getElementById('Hecht');
+        
+        HechtPath.addEventListener('mouseenter', function() {
+            HechtText.style.display = 'block';
+        });
+        
+        HechtPath.addEventListener('mouseleave', function() {
+            HechtText.style.display = 'none';
+        });
+
+        const FrostText = document.getElementById('FrostText');
+        const FrostPath = document.getElementById('Frost');
+        
+        FrostPath.addEventListener('mouseenter', function() {
+            FrostText.style.display = 'block';
+        });
+        
+        FrostPath.addEventListener('mouseleave', function() {
+            FrostText.style.display = 'none';
+        });
+
+        
+        const LawText = document.getElementById('LawText');
+        const LawPath = document.getElementById('Law');
+        
+        LawPath.addEventListener('mouseenter', function() {
+            LawText.style.display = 'block';
+        });
+        
+        LawPath.addEventListener('mouseleave', function() {
+            LawText.style.display = 'none';
+        });
+
+        const RichterText = document.getElementById('RichterText');
+        const RichterPath = document.getElementById('Richter');
+        
+        RichterPath.addEventListener('mouseenter', function() {
+            RichterText.style.display = 'block';
+        });
+        
+        RichterPath.addEventListener('mouseleave', function() {
+            RichterText.style.display = 'none';
+        });
+        const CASText = document.getElementById('CASText');
+        const CASPath = document.getElementById('CAS');
+        
+        CASPath.addEventListener('mouseenter', function() {
+            CASText.style.display = 'block';
+        });
+        
+        CASPath.addEventListener('mouseleave', function() {
+            CASText.style.display = 'none';
+        });
+
+        const CSText = document.getElementById('CSText');
+        const CSPath = document.getElementById('CS');
+        
+        CSPath.addEventListener('mouseenter', function() {
+            CSText.style.display = 'block';
+        });
+        
+        CSPath.addEventListener('mouseleave', function() {
+            CSText.style.display = 'none';
+        });
+
+        const CoxText = document.getElementById('CoxText');
+        const CoxPath = document.getElementById('Cox');
+        
+        CoxPath.addEventListener('mouseenter', function() {
+            CoxText.style.display = 'block';
+        });
+        
+        CoxPath.addEventListener('mouseleave', function() {
+            CoxText.style.display = 'none';
+        });
+        
+        const DoolyText = document.getElementById('DoolyText');
+        const DoolyPath = document.getElementById('Dooly');
+        
+        DoolyPath.addEventListener('mouseenter', function() {
+            DoolyText.style.display = 'block';
+        });
+        
+        DoolyPath.addEventListener('mouseleave', function() {
+            DoolyText.style.display = 'none';
+        });
+
+        const PhysicsText = document.getElementById('PhysicsText');
+        const PhysicsPath = document.getElementById('Physics');
+        
+        PhysicsPath.addEventListener('mouseenter', function() {
+            PhysicsText.style.display = 'block';
+        });
+        
+        PhysicsPath.addEventListener('mouseleave', function() {
+            PhysicsText.style.display = 'none';
+        });
+
+        const PoliSciText = document.getElementById('PoliSciText');
+        const PoliSciPath = document.getElementById('PoliSci');
+        
+        PoliSciPath.addEventListener('mouseenter', function() {
+            PoliSciText.style.display = 'block';
+        });
+        
+        PoliSciPath.addEventListener('mouseleave', function() {
+            PoliSciText.style.display = 'none';
+        });
+
+        const NursingText = document.getElementById('NursingText');
+        const NursingPath = document.getElementById('Nursing');
+        
+        NursingPath.addEventListener('mouseenter', function() {
+            NursingText.style.display = 'block';
+        });
+        
+        NursingPath.addEventListener('mouseleave', function() {
+            NursingText.style.display = 'none';
+        });
+
+        const AllenText = document.getElementById('AllenText');
+        const AllenPath = document.getElementById('Allen');
+        
+        AllenPath.addEventListener('mouseenter', function() {
+            AllenText.style.display = 'block';
+        });
+        
+        AllenPath.addEventListener('mouseleave', function() {
+            AllenText.style.display = 'none';
+        });
+
+        const CommText = document.getElementById('CommText');
+        const CommPath = document.getElementById('Comm');
+        
+        CommPath.addEventListener('mouseenter', function() {
+            CommText.style.display = 'block';
+        });
+        
+        CommPath.addEventListener('mouseleave', function() {
+            CommText.style.display = 'none';
+        });
+
+        const LCText = document.getElementById('LCText');
+        const LCPath = document.getElementById('LC');
+        
+        LCPath.addEventListener('mouseenter', function() {
+            LCText.style.display = 'block';
+        });
+        
+        LCPath.addEventListener('mouseleave', function() {
+            LCText.style.display = 'none';
+        });
+
+        const MerrickText = document.getElementById('MerrickText');
+        const MerrickPath = document.getElementById('Merrick');
+        
+        MerrickPath.addEventListener('mouseenter', function() {
+            MerrickText.style.display = 'block';
+        });
+        
+        MerrickPath.addEventListener('mouseleave', function() {
+            MerrickText.style.display = 'none';
+        });
+
+        const HerbertText = document.getElementById('HerbertText');
+        const HerbertPath = document.getElementById('Herbert');
+        
+        HerbertPath.addEventListener('mouseenter', function() {
+            HerbertText.style.display = 'block';
+        });
+        
+        HerbertPath.addEventListener('mouseleave', function() {
+            HerbertText.style.display = 'none';
+        });
+        const EatonText = document.getElementById('EatonText');
+        const EatonPath = document.getElementById('Eaton');
+        
+        EatonPath.addEventListener('mouseenter', function() {
+            EatonText.style.display = 'block';
+        });
+        
+        EatonPath.addEventListener('mouseleave', function() {
+            EatonText.style.display = 'none';
+        });
+
+
+
+
+
+
+
+
+
         // blurring map
         svgImage.addEventListener("click", function() {
             svgImage.classList.add("blur");
